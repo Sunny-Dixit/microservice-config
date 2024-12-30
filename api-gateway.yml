@@ -9,11 +9,11 @@ cloud:
   gateway:
     routes:
       - id: CITIZENSERVICE
-        uri: lb://CITIZENSERVICE
+        uri: lb://CITIZEN-SERVICE
         predicates:
           - Path=/citizen/**
 
-      - id: VACCINATIONCENTER
+      - id: VACCINATION-CENTER-SERVICE	
         uri: lb://VACCINATIONCENTER
         predicates:
           - Path=/vaccinationcenter/**
