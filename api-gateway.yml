@@ -14,6 +14,6 @@ cloud:
           - Path=/citizen/**
 
       - id: VACCINATION-CENTER-SERVICE	
-        uri: lb://VACCINATIONCENTER
+        uri: lb://VACCINATION-CENTER-SERVICE	
         predicates:
           - Path=/vaccinationcenter/**
