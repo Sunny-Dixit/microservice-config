@@ -49,7 +49,7 @@ resilience4j:
     
   ratelimiter:
     instances:
-      CitizenDownTime:
+      citizenRateLimiter:
         limit-refresh-period: 4s
         limit-for-period: 2
         timeout-duration: 0s         
