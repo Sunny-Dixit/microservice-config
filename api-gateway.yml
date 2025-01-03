@@ -19,6 +19,7 @@ spring:
           lb://VACCINATION-CENTER-SERVICE
         predicates:
         - Path=/vaccinationcenter/**
+#Okta configuration for api gateway
 okta:
   oauth2:
     issuer: https://dev-02199384.okta.com/oauth2/default
@@ -26,8 +27,10 @@ okta:
     client-id: 0oam8yrcm3A0WXl3S5d7
     client-secret: fbLF6MWKnajg6iqnfH6UthNkZLE4WLQAELMIRuZwE0OMUXE6JmuJBXoG2qK1BLZ-
     scopes:
-    - openid, profile, email, offline_access
-
+     - openid
+     - profile
+     - email
+     - offline_access
       
         
           
